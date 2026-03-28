@@ -22,7 +22,6 @@ import neptuneDetails from './neptuneDetails.png';
 import plutoDetails from './plutoDetails.png';
 import { Game } from './Game';
 import { Messages } from './Messages';
-import { Wordle } from './Wordle/Wordle';
 
 
 // const cssUnit = window.matchMedia("(orientation: landscape)").matches ? 'vw' : 'vh';
@@ -704,7 +703,6 @@ const DebouncedFilter = () => {
 
 
 const App = () => {
-  // const [word,setWord] = useState('LEVEL');
 
   return (
     <div className="App">
@@ -713,10 +711,7 @@ const App = () => {
       {/* <SolarSystem />  */}
       {/* <DebouncedFilter /> */}
       {/* <Messages/> */}
-      {/* <Game poles={3} rings={7} /> */}
-      {/* <button onClick={() => setWord('hello')}>Change Word</button> {word} */}
-      {/* <div>a</div> */}
-      <Wordle word="LEVEL" attempts={6} />
+      <Game poles={3} rings={7} />
     </div>
   );
 };
